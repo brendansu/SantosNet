@@ -241,7 +241,7 @@ if __name__ == '__main__':
                 # Save a checkpoint
                 if (batch_count % 20) == 0:
                     print('Saving checkpoint ' + str(batch_count))
-                    model.save('model_checkpoint' + batch_count + '.h5')
+                    model.save('model_checkpoint' + str(batch_count) + '.h5')
                     print('Checkpoint saved. Continuing...')
     except Exception as e:
         print('Excepted with ' + str(e))
